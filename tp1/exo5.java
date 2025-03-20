@@ -1,18 +1,6 @@
 package tp1;
 
 public class exo5 {
-//    Exercice 5
-//    Une matrice peut être représentée par un tableau à deux dimensions. Dans cet exercice, nous
-//    nous limiterons au cas de matrices carrées d’entiers.
-//    Ecrire une classe Java contenant des méthodes permettant de :
-//            - remplir une matrice ;
-//- afficher une matrice ;
-//- additionner deux matrices ;
-//- multiplier deux matrices ;
-//- déterminer la transposée d’une matrice.
-//    La méthode main de votre programme devra permettre de tester l’ensemble des méthodes
-//    décrites ci-dessus.
-
 
     public void remplirUneMatrice(int[][] matrice) {
         for (int i = 0; i < matrice.length; i++) {

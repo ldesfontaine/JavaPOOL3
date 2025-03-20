@@ -1,20 +1,6 @@
 package tp1;
 
 public class exo3 {
-//    Exercice 3
-//    Ecrire une classe Java qui permet d’obtenir les informations suivantes sur un tableau d’entiers :
-//  - Affichage du tableau
-//- Somme des éléments du tableau
-//- Moyenne des éléments du tableau
-//- Ecart-type des éléments du tableau
-//- Minimum du tableau
-//- Maximum du tableau
-//- Position d’un élément donné dans le tableau
-//- Distribution des valeurs dans le tableau
-//- Diagramme bâton de la distribution des valeurs du tableau.
-//    Chacune de ces informations sera déterminée par appel à une méthode. La méthode main de votre
-//    classe permettra de tester l’ensemble des méthodes développées.
-
 
     public int[] remplirUnTableau() {
         return new int[]{2,5,1,4,6,4,1,1,1};
