@@ -11,8 +11,8 @@ public class exo1 {
 1) En utilisant des méthodes de la classe String de Java, écrire un programme qui réalise les
 opérations suivantes :
 a) Demander la saisie d’une phrase.
-b) Afficher la phrase en majuscules.
-c) Compter le nombre de a dans la phrase puis, s'il y en a, transformer tous les a en *.
+test.b) Afficher la phrase en majuscules.
+test.c) Compter le nombre de a dans la phrase puis, s'il y en a, transformer tous les a en *.
 */
 
     public void part1(){
@@ -37,8 +37,8 @@ c) Compter le nombre de a dans la phrase puis, s'il y en a, transformer tous les
     /*
     2) Écrire un programme qui permet d’obtenir les actions suivantes :
     a) Saisir des mots jusqu'à ce que l’utilisateur entre le mot « Fin ».
-    b) Afficher, parmi les mots saisis, le premier dans l’ordre alphabétique.
-    c) Afficher, parmi les mots saisis, le dernier dans l'ordre alphabétique.
+    test.b) Afficher, parmi les mots saisis, le premier dans l’ordre alphabétique.
+    test.c) Afficher, parmi les mots saisis, le dernier dans l'ordre alphabétique.
     N.B. : Le mot « Fin » ne doit pas être pris en compte dans la liste des mots saisis.
      */
     public void part2(){
