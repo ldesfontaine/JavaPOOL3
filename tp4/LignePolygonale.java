@@ -35,8 +35,11 @@ public class LignePolygonale {
 
     public void translater(int dx, int dy) {
         for (int i = 0; i < this.sommets.length; i++) {
-}
+            this.sommets[i].x += dx;
+            this.sommets[i].y += dy;
+        }
     }
+
 
     public double longueur() {
         double longueur = 0;

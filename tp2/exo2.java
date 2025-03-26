@@ -4,8 +4,8 @@ package tp2;
 public class exo2 {
 
     public static class Point {
-        protected double x;
-        protected double y;
+        public double x;
+        public double y;
 
 
         public void translation(double dx, double dy) {
