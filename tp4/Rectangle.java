@@ -29,4 +29,15 @@ public class Rectangle implements Forme {
     public String toString() {
         return "Rectangle : " + p1.toString() + ", " + p2.toString();
     }
+
+    public static void main(String[] args) {
+        exo1.Point p1 = new exo1.Point(0, 0);
+        exo1.Point p2 = new exo1.Point(1, 1);
+        Rectangle r = new Rectangle(p1, p2);
+        System.out.println(r);
+        System.out.println("Périmètre : " + r.getPerimetre());
+        System.out.println("Surface : " + r.getSurface());
+        Forme r2 = r.translater(1, 1);
+        System.out.println(r2);
+    }
 }

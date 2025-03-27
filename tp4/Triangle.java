@@ -31,4 +31,18 @@ public class Triangle implements Forme {
     public String toString() {
         return "Triangle : " + p1.toString() + ", " + p2.toString() + ", " + p3.toString();
     }
+
+    public static void main(String[] args) {
+        exo1.Point p1 = new exo1.Point(0, 0);
+        exo1.Point p2 = new exo1.Point(1, 0);
+        exo1.Point p3 = new exo1.Point(0, 1);
+        Triangle t = new Triangle(p1, p2, p3);
+        System.out.println(t);
+        System.out.println("Périmètre : " + t.getPerimetre());
+        System.out.println("Surface : " + t.getSurface());
+        Forme t2 = t.translater(1, 1);
+        System.out.println(t2);
+    }
 }
+
+
