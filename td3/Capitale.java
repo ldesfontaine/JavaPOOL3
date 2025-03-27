@@ -50,7 +50,6 @@ public class Capitale extends Ville {
 
 
 
-
     public static void main(String[] args) {
         // les tests
         Capitale c1 = new Capitale();

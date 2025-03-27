@@ -20,11 +20,12 @@ public class LignePolygonale {
         this.sommets[index] = p;
     }
 
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         for (int i = 0; i < this.sommets.length; i++) {
-            sb.append(this.sommets[i].toString());
+            sb.append("(").append(this.sommets[i].x).append(",").append(this.sommets[i].y).append(")");
             if (i < this.sommets.length - 1) {
                 sb.append(", ");
             }
@@ -34,9 +35,9 @@ public class LignePolygonale {
     }
 
     public void translater(int dx, int dy) {
-        for (int i = 0; i < this.sommets.length; i++) {
-            this.sommets[i].x += dx;
-            this.sommets[i].y += dy;
+        for (exo1.Point sommet : this.sommets) {
+            sommet.x += dx;
+            sommet.y += dy;
         }
     }
 
@@ -51,5 +52,33 @@ public class LignePolygonale {
 
     public boolean estFermee() {
         return this.sommets[0].equals(this.sommets[this.sommets.length - 1]);
+    }
+
+    // les tests
+    public static void main(String[] args) {
+        exo1.Point p1 = new exo1.Point(1, 2);
+        exo1.Point p2 = new exo1.Point(3, 4);
+        exo1.Point p3 = new exo1.Point(5, 6);
+        exo1.Point p4 = new exo1.Point(1, 2);
+
+        LignePolygonale lp1 = new LignePolygonale(3);
+        lp1.setSommet(0, p1);
+        lp1.setSommet(1, p2);
+        lp1.setSommet(2, p3);
+
+        LignePolygonale lp2 = new LignePolygonale(new exo1.Point[]{p1, p2, p3});
+
+        System.out.println(lp1.toString());
+        System.out.println(lp2.toString());
+
+        System.out.println(lp1.longueur());
+        System.out.println(lp2.longueur());
+
+        System.out.println(lp1.estFermee());
+        System.out.println(lp2.estFermee());
+
+        lp1.translater(1, 1);
+        System.out.println(lp1.toString());
+
     }
 }
