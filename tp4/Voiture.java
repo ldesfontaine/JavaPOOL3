@@ -1,6 +1,7 @@
 package tp4;
 
-public abstract class Voiture {
+/** Classe de base abstraite pour toutes les voitures */
+abstract class Voiture {
     protected String numero;
     protected double prix;
 

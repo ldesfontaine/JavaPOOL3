@@ -1,8 +1,9 @@
 package tp4;
 
-public class Occasion extends Voiture {
+/** Classe représentant une voiture d'occasion */
+class Occasion extends Voiture {
     private int nbKms;
-    private int age;
+    private int age; // en années
 
     public Occasion(String numero, double prix, int nbKms, int age) {
         super(numero, prix);
@@ -20,6 +21,14 @@ public class Occasion extends Voiture {
 
     @Override
     public double getPrix() {
-        return prix; // Peut être ajusté en fonction de l'âge et du kilométrage
+        int kmNormal = age * 20000;
+        double ecart = kmNormal - nbKms;
+        return prix + (ecart * 6);
+    }
+
+    @Override
+    public String toString() {
+        return "Occasion " + numero + " - Base: " + prix + " CHF, "
+                + nbKms + " km, " + age + " ans -> Prix ajusté: " + getPrix() + " CHF";
     }
 }
